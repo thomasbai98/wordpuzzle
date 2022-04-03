@@ -1,0 +1,55 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    display: none;
+    color: black;
+    background-image: linear-gradient(to bottom right,black,black); /*#FC8E02, #FCC302*/
+}
+
+#logo {
+    position:absolute;
+    top: 30%;
+    width:100vw;
+    font-family: Nunito;
+    font-size: 18vh;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.78;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: white;
+}
+#metamask_icon {
+    position: absolute;
+    top: 65%;
+    left: 34%;
+    width: 10%;
+    height: 10%;
+    background: url('../image/metamask.png');
+    border: none;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#metamask_button {
+    position: absolute;
+    top: 65%;
+    left: 44%;
+    width: 20%;
+    height: 10%;
+    color: #fff;
+    background-image: linear-gradient(to bottom right,#9700BF,#EB9FFE); /*#FC8E02, #FCC302*/
+    border-color: purple;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+}
+
+

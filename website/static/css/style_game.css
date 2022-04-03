@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    background-image: linear-gradient(to bottom right,black,black); /*#FC8E02, #FCC302*/
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    display:none;
+}
+
+#title {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    color: white;
+    width:100%;
+    text-align: center;
+}
+
+
+#buy {
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    color: white;
+}
+
+#msg_buy {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width:40%;
+    color: red;
+    text-align:center;
+}
+
+#check {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: white;
+}
+#gameresult {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: red;
+}
+#instruction {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: red;
+}
+#submit {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    color: white;
+}
+
+

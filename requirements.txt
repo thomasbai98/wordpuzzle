@@ -1,0 +1,8 @@
+flask
+Flask-SQLAlchemy
+flask-login
+flask-migrate
+gunicorn
+psycopg2-binary
+boto3
+flask_compress

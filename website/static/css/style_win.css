@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    background-image: linear-gradient(to bottom right,black,black); /*#FC8E02, #FCC302*/
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    color: white;
+    width:100%;
+    text-align: center;
+}
+#back {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    color: #fff;
+    background-image: linear-gradient(to bottom right,#9700BF,#EB9FFE); /*#FC8E02, #FCC302*/
+    border-color: purple;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+}

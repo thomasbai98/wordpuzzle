@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/css/style_game.css">
+    <script src="../static/js/main.js"></script>
+
+
+</head>
+<body>
+    <div id="buying">
+        <h2 id="title" align="center">Purchase a Puzzle</h2>
+
+        <form method="POST" class="form" id="buy">
+            <div class="form-group">
+                <label for="email">Puzzle Number</label>
+                <input required id="purchase" name="purchase" />
+                <button class="btn btn-primary" onclick="buypuzzle()">Buy</button>
+            </div>
+        </form>
+        <h3 id="msg_buy">Purchase an own a unique word puzzle at only 1 PUZZ to get a chance to earn more PUZZ and a NFT</h3>
+    </div>
+
+    <div id="solving">
+        <h2 id="title" align="center">Solving puzzle {{data.task}}</h2>
+
+        <form method="POST" class="form" id="check">
+            <h3 id="title1">Check Correctness: {{data.chance}} chance remaining</h3>
+            <div class="form-group">
+                <input required id="ask" name="ask">
+                <button type="submit" class="btn btn-primary">Check</button>
+            </div>
+        </form>
+        <form method="POST" class="form" id="submit">
+            <h3 id="title2">Submit Answer</h3>
+            <div class="form-group">
+                <input required id="answer" name="answer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <h3 id="gameresult">{{data.result}}</h3>
+        {% if data.result!=""%}
+        <p id="instruction">* for correct, o for letter in the solution but different position, x for wrong</p>
+        {%endif%}
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+</html>
